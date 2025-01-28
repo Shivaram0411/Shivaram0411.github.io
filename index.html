@@ -3,52 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Portfolio</title>
+  <title>Your Name - 3D Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation Bar -->
-  <nav>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#resume">Resume</a></li>
-    </ul>
-  </nav>
+  <!-- 3D Canvas -->
+  <canvas id="3d-canvas"></canvas>
 
-  <!-- About Section -->
-  <section id="about">
-    <h1>Hi, I'm Shivaram Emmidi</h1>
-    <p>proficient software developer. Welcome to my portfolio!</p>
-    <a href="https://github.com/Shivaram0411" target="_blank">GitHub</a>
-    <a href="https://linkedin.com/in/shivaram-emmidi" target="_blank">LinkedIn</a>
-  </section>
+  <!-- Content -->
+  <div class="content">
+    <!-- Navigation -->
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+      </ul>
+    </nav>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Project 1</h3>
-      <p>Description of Project 1.</p>
-      <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-    </div>
-    <div class="project">
-      <h3>Project 2</h3>
-      <p>Description of Project 2.</p>
-      <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
-    </div>
-  </section>
+    <!-- About Section -->
+    <section id="about">
+      <h1>Hi, I'm [Your Name]</h1>
+      <p>I'm a software developer specializing in [your skills]. Welcome to my 3D portfolio!</p>
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a>
+      </div>
+    </section>
 
-  <!-- Resume Section -->
-  <section id="resume">
-    <h2>Resume</h2>
-    <p>Download my resume to learn more about my experience and skills.</p>
-    <a href="assets/resume.pdf" download>Download Resume</a>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Description of Project 1.</p>
+        <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Description of Project 2.</p>
+        <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+      </div>
+    </section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2023 [Your Name]. All rights reserved.</p>
-  </footer>
+    <!-- Resume Section -->
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>Download my resume to learn more about my experience and skills.</p>
+      <a href="assets/resume.pdf" download>Download Resume</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 [Your Name]. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Three.js Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r146/three.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
